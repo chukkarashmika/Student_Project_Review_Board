@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#eef2ff;
+    padding:30px;
+}
+
+.title{
+    text-align:center;
+    color:#4f46e5;
+    margin-bottom:25px;
+    font-size:2.5rem;
+}
+
+.dashboard{
+    display:flex;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+.total-projects{
+    background:#4f46e5;
+    color:white;
+    padding:15px 25px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+#projectContainer{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.card-header h3{
+    color:#4f46e5;
+}
+
+.status{
+    background:#fef3c7;
+    color:#92400e;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.info p{
+    margin:10px 0;
+    color:#374151;
+    font-size:15px;
+}
+
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+}
+
+textarea{
+    height:80px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    margin-top:12px;
+    padding:12px;
+    background:#4f46e5;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#4338ca;
+}
+.section-title{
+    margin-top:40px;
+    margin-bottom:20px;
+    color:#4f46e5;
+    text-align:center;
+}
+
+#reviewedProjects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:20px;
+}
+.dashboard{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    margin-bottom:30px;
+}
+
+.dashboard-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    width:220px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dashboard-card h3{
+    color:#4f46e5;
+    margin-bottom:10px;
+}
+
+.dashboard-card p{
+    font-size:32px;
+    font-weight:bold;
+}
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ddd;
+}
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 14px;
+    color: #fff;
+    background: #3d67ff;
+}

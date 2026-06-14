@@ -1,9 +1,10 @@
 const container = document.getElementById("projectContainer");
 const reviewedContainer = document.getElementById("reviewedProjects");
+const API_BASE_URL = window.API_BASE_URL || "";
 
 async function loadProjects() {
     try {
-        const response = await fetch("http://localhost:5000/api/projects");
+        const response = await fetch(`${API_BASE_URL}/api/projects`);
         const projects = await response.json();
 
         // Counts
@@ -97,7 +98,7 @@ async function updateProject(id) {
         return; // stop execution
     }
 
-    await fetch(`http://localhost:5000/api/projects/${id}`, {
+    await fetch(`${API_BASE_URL}/api/projects/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"

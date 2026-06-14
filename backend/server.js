@@ -3,6 +3,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const path = require("path");
 const connectDB = require("./config/db");
+const authRoutes = require("./routes/authRoutes");
 const projectRoutes = require("./routes/projectRoutes");
 
 dotenv.config();
@@ -15,6 +16,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../frontend")));
 
+app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
 
 app.get("/", (req, res) => {

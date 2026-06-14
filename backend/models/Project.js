@@ -31,6 +31,18 @@ const projectSchema = new mongoose.Schema(
             type: String,
             default: ""
         },
+        screenshots: [
+            {
+                name: {
+                    type: String,
+                    default: "Project screenshot"
+                },
+                dataUrl: {
+                    type: String,
+                    required: true
+                }
+            }
+        ],
         grade: {
             type: String,
             default: "Not Graded"
